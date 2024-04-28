@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "randstuff:ground_basalt",
+      "count": 3
+    }
+  ],
+  "processingTime": 150
+}

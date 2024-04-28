@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "randstuff",
+	"version": "${version}",
+	"name": "Create: Random Fun Stuff",
+	"description": "A Create addon I made",
+	"authors": [
+		"IpGa13",
+		"Fredeun",
+		"NOT MICROSOFT"
+	],
+	"contact": {
+		"homepage": "https://fredeun.net/",
+		"sources": "https://fredeun.net/mods/createaddon/source"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/randstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fredeun.randstuff.CreateRandomFunStuff"
+		],
+		"client": [
+			"net.fredeun.randstuff.CreateRandomFunStuffClient"
+		]
+	},
+	"mixins": [
+		"randstuff.mixins.json",
+		{
+			"config": "randstuff.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "amount": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "randstuff:glowing_obsidian",
+      "count": 2
+    }
+  ],
+  "heatRequirement": "heated"
+}

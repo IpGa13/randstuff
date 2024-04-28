@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "randstuff:ground_basalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:flint",
+      "chance": 0.25
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "chance": 0.125
+    }
+  ]
+}
