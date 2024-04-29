@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModFluids {
+    // Fluids are on hold right now because complex
 
     //public static final Fluid LIQUID_REDSTONE = registerFluid("liquid_redstone", new WaterFluid.Flowing());
 
