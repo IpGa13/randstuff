@@ -21,7 +21,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).lightLevel(10)));
 
     public static final Block GROUND_BASALT = registerBlock("ground_basalt", new Block(FabricBlockSettings.copyOf(Blocks.GRAVEL)));
-
+    
+    public static final Block TEA_LEAVES = registerBlock("tea_leaves", new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+    
     private static Block registerBlock(String name, Block block) {
         Identifier id = new Identifier(CreateRandomFunStuff.MOD_ID, name);
         registerBlockItem(id, block);
