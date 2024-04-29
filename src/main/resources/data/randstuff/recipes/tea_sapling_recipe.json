@@ -1,0 +1,69 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:oak_sapling"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "randstuff:tea_sapling"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:oak_sapling"
+        },
+        {
+          "amount": 50000,
+          "fluid": "create:tea",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "randstuff:infertile_tea_sapling"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "randstuff:infertile_tea_sapling"
+        },
+        {
+          "item": "minecraft:apple"
+        }
+      ],
+      "results": [
+        {
+          "item": "randstuff:infertile_tea_sapling"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "randstuff:infertile_tea_sapling"
+        },
+        {
+          "amount": 50000,
+          "fluid": "minecraft:water",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "randstuff:infertile_tea_sapling"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "randstuff:infertile_tea_sapling"
+  }
+}

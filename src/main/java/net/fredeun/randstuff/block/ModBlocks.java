@@ -7,12 +7,18 @@ import net.fredeun.randstuff.CreateRandomFunStuff;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import org.jetbrains.annotations.Nullable;
 
 public class ModBlocks {
 
@@ -22,7 +28,8 @@ public class ModBlocks {
 
     public static final Block GROUND_BASALT = registerBlock("ground_basalt", new Block(FabricBlockSettings.copyOf(Blocks.GRAVEL)));
     
-    public static final Block TEA_LEAVES = registerBlock("tea_leaves", new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+    public static final Block TEA_LEAVES = registerBlock("tea_leaves", new TeaLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+    public static final Block TEA_SAPLING = registerBlock("tea_sapling", new TeaSapling(FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     
     private static Block registerBlock(String name, Block block) {
         Identifier id = new Identifier(CreateRandomFunStuff.MOD_ID, name);

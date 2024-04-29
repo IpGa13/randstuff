@@ -13,6 +13,11 @@ public class ModItems {
 
     public static final Item MARTINI_GLASS = registerItem("martini_glass", new Item(new FabricItemSettings()));
     public static final Item MOONSHINE = registerItem("moonshine", new Item(new FabricItemSettings()));
+
+    public static final Item TEA_LEAF = registerItem("tea_leaf", new Item(new FabricItemSettings()));
+
+    public static final Item ITS = registerItem("infertile_tea_sapling", new Item(new FabricItemSettings()));
+    //public static final Item TS = registerItem("tea_sapling", new Item(new FabricItemSettings()));
     //public static final Item REDSTONE_BUCKET = registerItem("redstone_bucket", ModFluids.LIQUID_REDSTONE.getBucketItem());
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(CreateRandomFunStuff.MOD_ID, name), item);
